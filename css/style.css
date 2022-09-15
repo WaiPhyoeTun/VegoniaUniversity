@@ -286,30 +286,37 @@ nav{
 
 /*Start  Pricing*/
 .pricingboxes{
-    background-color: #eee;
-    text-align: center;
+    background-color:#eee;
+    text-align:center;
+    padding-bottom: 20px;
+    transition:transform .3s;
 }
 
-.price-headers{
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 10px 0;
+.pricingboxes:hover{
+    transform:translateY(-20px);
+}
+
+.pricing-headers{
+    background-color:var(--secondary-color);
+    color:#fff;
+    padding:10px 0;
 }
 
 .prices{
-    font-size: 3rem;
-    font-weight: bold;
-    background: url('./../assets/img/icon/pricebg.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    font-size:3rem;
+    font-weight:bold;
+    background:url('../assets/img/icon/pricebg.png');
+    background-repeat:no-repeat;
 
-    line-height: 160px;
+    line-height:160px;
+
+    background-position:center;
 }
+
 .price-items li{
-    margin: 10px 0;
+    margin:10px 0;
 }
-
-/*End  Pricing*/
+/* End Prcng Section */
 
 
 /*Start Location Section*/
@@ -374,3 +381,244 @@ nav{
 }
 
 /* End Features Section  */
+
+/*Start Rating Section*/
+
+.headings{
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.fa-star{
+    font-size: 25px;
+}
+.fills{
+    color: orange;
+}
+
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bars-container{
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.bars-1{
+    width:60% ;
+    height: 18px;
+    background-color: green;
+}
+
+.bars-2{
+    width:30% ;
+    height: 18px;
+    background-color: blue;
+}
+
+.bars-3{
+    width:10% ;
+    height: 18px;
+    background-color: skyblue;
+}
+.bars-4{
+    width:5% ;
+    height: 18px;
+    background-color: orange;
+}
+
+.bars-5{
+    width:47% ;
+    height: 18px;
+    background-color: red;
+}
+
+.lefts{
+    width: 20%;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.middles{
+    width: 60%;
+    margin-bottom: 10px;
+
+}
+.rights{
+    width: 20%;
+    margin-bottom: 10px;
+    text-align: right;
+}
+/*End Rating Section*/
+
+
+/*Start Subscribe Section*/
+.subscribes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("../assets/img/etc/student1.png");
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
+
+@media (max-wdith: 992px){
+    .subscribes {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+    }
+
+}
+
+@media (max-wdith: 992px){
+    .subscribes {
+        background-position: 90%;
+    }
+
+}
+
+.input-group-text{
+    /* background-color:royalblue; */
+    color:#fff;
+}
+
+.squareareas {
+  position: relative;
+  overflow: hidden;
+}
+
+.sqboxes {
+  width: 100%;
+  height: 100%;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  background-color: #f2f2f2;
+
+  position: absolute;
+  left: 0;
+  bottom: -50%;
+
+  animation: sqani 1s infinite ease-in-out;
+}
+
+@keyframes sqani {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100%;
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.square:nth-child(1) {
+  width: 70px;
+  height: 70px;
+  left: 7%;
+  animation-delay: 1s;
+}
+
+.square:nth-child(2) {
+  width: 65px;
+  height: 65px;
+  left: 15%;
+
+  animation-delay: 1.2s;
+}
+
+.square:nth-child(3) {
+  width: 82px;
+  height: 82px;
+  left: 45%;
+
+  animation-delay: 1.4s;
+}
+
+.square:nth-child(4) {
+  width: 70px;
+  height: 70px;
+  left: 55%;
+
+  animation-delay: 1.6s;
+}
+
+.square:nth-child(5) {
+  width: 55px;
+  height: 55px;
+  left: 27%;
+
+  animation-delay: 1.8s;
+}
+
+.square:nth-child(6) {
+  width: 70px;
+  height: 70px;
+  left: 27%;
+  animation-delay: 2s;
+}
+
+.square:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 7%;
+  animation-delay: 2.1s;
+}
+
+.square:nth-child(8) {
+  width: 70px;
+  height: 70px;
+  left: 75%;
+  animation-delay: 2.3s;
+}
+
+.square:nth-child(9) {
+  width: 45px;
+  height: 45px;
+  left: 10%;
+  animation-delay: 1.8s;
+}
+
+.square:nth-child(10) {
+  width: 55px;
+  height: 55px;
+  left: 63%;
+  animation-delay: 1.1ss;
+}
+/*End Subscribe Section*/
+
+
+/*Start Footer Section*/
+
+.footerlinks{
+    color: #eee;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footerlinks:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+    letter-spacing: 1px;
+}
+
+.footersocialicons a{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+
+  margin: 0 2px
+}
+
+.footersocialicons a:hover{
+  background-color: blue;
+}
+
+/*End Footer Section*/

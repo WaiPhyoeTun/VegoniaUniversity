@@ -41,7 +41,7 @@ getcountervalues.forEach(function(getcountervalue){
         // console.log(typeof getctcontent,getctcontent);
 
         const incnumber = getcttarget / 100;
-        console.log(incnumber);
+        // console.log(incnumber);
 
         if(getctcontent < getcttarget){
             getcountervalue.textContent = getctcontent+incnumber;
@@ -56,5 +56,41 @@ getcountervalues.forEach(function(getcountervalue){
 })
 
 // end student counter section
+
+// Start Rating Section
+
+// start google code for chart
+google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Students per Attance'],
+          ['Myanmar',    8],
+          ['Thailand',      2],
+          ['Singapore',  4],
+          ['Indonisa', 2],
+          ['Sirilanka',    8]
+        ]);
+
+        var options = {
+          title: 'Intational Students',
+          // is3D: true,
+          // pieHole: 0.4,
+          width:550,
+          height:400
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+
+// end google code for chart
+
+
+// End Rating Section
+
 
 // End JavaScript Area
